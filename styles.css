@@ -34,4 +34,26 @@ body {
     width: 200px;
     height: 200px;
 }
+.balloon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    animation: balloon-animation 5s infinite;
+}
+
+@keyframes balloon-animation {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+
 
